@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-wrapper">
+            <h2 class="form-title">Survey Form</h2>
+            <p class="form-subtitle">User stories survey form</p>
+            
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter E-Mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Work Experience:</label>
+                    <input type="number" id="experience" name="experience" placeholder="Enter Number" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="investment">Are you comfortable in investing in real estate or platform without first investigating property?</label>
+                    <select id="investment" name="investment" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">Maybe</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Suggestions to build trusted platform:</label>
+                    <textarea id="suggestions" name="suggestions" rows="3" placeholder="Enter your suggestions"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>You are ready to invest in:</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="real-estate" name="investment-type" value="real-estate">
+                            <label for="real-estate">Real Estate</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="mutual-funds" name="investment-type" value="mutual-funds">
+                            <label for="mutual-funds">Mutual Funds</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="crypto" name="investment-type" value="crypto">
+                            <label for="crypto">Crypto Currency</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="stocks" name="investment-type" value="stocks">
+                            <label for="stocks">Stocks & Bonds</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Are you ready for further contact?</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="contact-yes" name="contact" value="yes" required>
+                            <label for="contact-yes">Yes</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="contact-no" name="contact" value="no" required>
+                            <label for="contact-no">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+</html>
